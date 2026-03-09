@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Main SOM Taxonomy Audit and Placement Documentation</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; color: #172b4d; line-height: 1.5; max-width: 960px; margin: 32px auto; }
+    h1, h2, h3 { color: #0c2340; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0 24px; }
+    th, td { border: 1px solid #dfe1e6; padding: 8px 10px; vertical-align: top; }
+    th { background: #f4f5f7; text-align: left; }
+    .note { background: #deebff; border-left: 4px solid #0052cc; padding: 12px 14px; margin: 16px 0; }
+  </style>
+</head>
+<body>
+  <h1>Main SOM Taxonomy Audit and Placement Documentation</h1>
+  <h2>Executive summary</h2>
+  <p>This work documents how taxonomy and section context drive content placement across the Yale SOM website. The documentation is the primary deliverable. The local Content Placement Advisor is a supporting prototype used to validate and demonstrate the documented logic.</p>
+  <p>The central editorial question is: <strong>If a content editor applies certain tags, where will that content appear?</strong></p>
+  <h2>Why this matters</h2>
+  <ul>
+    <li>Placement behavior is not always obvious to editors because it depends on Views, taxonomy, page context, and template-driven rules.</li>
+    <li>Clear documentation reduces guesswork and supports more consistent tagging.</li>
+    <li>A documented model also makes the site easier to maintain.</li>
+  </ul>
+  <h2>What has been accomplished</h2>
+  <ul>
+    <li>Documented the main placement mechanisms currently in use.</li>
+    <li>Separated descriptive taxonomy from placement-driving taxonomy.</li>
+    <li>Improved accuracy by accounting for related-content templates and inherited section context.</li>
+    <li>Created a supporting prototype and workbook to test and explain placements.</li>
+  </ul>
+  <h2>Placement model now documented</h2>
+  <table>
+    <tr><th>Pattern</th><th>Description</th></tr>
+    <tr><td>Direct View-driven placement</td><td>Placements controlled by embedded Drupal Views with explicit filters or runtime arguments.</td></tr>
+    <tr><td>Template-driven related content</td><td>Placements rendered by node templates or preprocess logic, such as related stories and related profiles.</td></tr>
+    <tr><td>Section inheritance</td><td>Program and Center pages can imply a required context even when the rendered View does not expose explicit arguments.</td></tr>
+    <tr><td>Manual exceptions</td><td>A small number of sections require explicit override rules when the relationship is not fully exposed in configuration.</td></tr>
+  </table>
+  <h2>Current confidence model</h2>
+  <table>
+    <tr><th>Source</th><th>Meaning</th></tr>
+    <tr><td>Explicit args</td><td>Derived from rendered Drupal runtime data.</td></tr>
+    <tr><td>Template logic</td><td>Derived from template and preprocess behavior.</td></tr>
+    <tr><td>Section inferred</td><td>Derived from Context config and section URL inheritance.</td></tr>
+    <tr><td>Manual override</td><td>Maintained exception for URLs that require a fixed inherited term.</td></tr>
+  </table>
+  <div class="note">
+    <strong>Supporting tools:</strong> The Content Placement Advisor and spreadsheet workbook should be treated as validation and demonstration tools for the documented rules, not as the primary deliverables.
+  </div>
+  <h2>Current state</h2>
+  <ul>
+    <li>Major placement rules have been identified and modeled.</li>
+    <li>Search views and modal-only views are excluded.</li>
+    <li>Related-content surfaces are separated from page-level placements.</li>
+    <li>Program and Center pages inherit section context more accurately.</li>
+  </ul>
+  <h2>Current limitations</h2>
+  <ul>
+    <li>Some site behavior still depends on conventions that are not fully explicit in Drupal configuration.</li>
+    <li>A small number of surfaces require manual override rules.</li>
+    <li>Results depend on the freshness of the crawl and exported datasets.</li>
+  </ul>
+  <h2>Supporting materials</h2>
+  <table>
+    <tr><th>Artifact</th><th>Purpose</th></tr>
+    <tr><td>Content-Placement-Advisor-Workbook.xlsx</td><td>Spreadsheet-based scenario testing against the current placement map.</td></tr>
+    <tr><td>inferred-placement-review.csv</td><td>Audit list of placements relying on inferred section context or manual overrides.</td></tr>
+    <tr><td>Local prototype</td><td>Interactive UI for testing and demonstrating the documented logic.</td></tr>
+  </table>
+  <h2>Recommended next steps</h2>
+  <ol>
+    <li>Use the Confluence page as the primary reference for taxonomy and placement behavior.</li>
+    <li>Review remaining inferred and manual rules with stakeholders.</li>
+    <li>Validate representative Story, Profile, and Event examples.</li>
+    <li>Decide whether the prototype remains an internal audit tool or evolves into a maintained internal utility.</li>
+  </ol>
+</body>
+</html>
