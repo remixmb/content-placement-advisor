@@ -1,0 +1,142 @@
+{
+  "entries": [
+    {
+      "viewId": "profiles_grid",
+      "displayId": "related",
+      "placementSource": "template",
+      "specificityWeight": 95,
+      "argumentSlots": [
+        {
+          "dimension": "nid",
+          "skipMatch": true,
+          "notes": "Current profile node ID passed by the full profile template."
+        },
+        {
+          "dimension": "program"
+        },
+        {
+          "dimension": "profile_type"
+        }
+      ],
+      "syntheticFromPageEntity": {
+        "bundle": "profile",
+        "slots": [
+          {
+            "dimension": "nid",
+            "strategy": "entity_id",
+            "skipMatch": true
+          },
+          {
+            "dimension": "program",
+            "strategy": "taxonomy:first"
+          },
+          {
+            "dimension": "profile_type",
+            "strategy": "taxonomy:first"
+          }
+        ]
+      },
+      "notes": "node--profile--full.html.twig renders drupal_view('profiles_grid', 'related', node.id, program_tid, profile_type_tid)."
+    },
+    {
+      "viewId": "profiles_grid",
+      "displayId": "related_ambassadors",
+      "placementSource": "template",
+      "specificityWeight": 96,
+      "argumentSlots": [
+        {
+          "dimension": "nid",
+          "skipMatch": true
+        },
+        {
+          "dimension": "program"
+        }
+      ],
+      "syntheticFromPageEntity": {
+        "bundle": "profile",
+        "slots": [
+          {
+            "dimension": "nid",
+            "strategy": "entity_id",
+            "skipMatch": true
+          },
+          {
+            "dimension": "program",
+            "strategy": "taxonomy:first"
+          }
+        ]
+      },
+      "notes": "Ambassador profile pages rely on the profile page context plus the fixed Ambassador filter in the view."
+    },
+    {
+      "viewId": "stories_teaser_cards",
+      "displayId": "embed_all",
+      "placementSource": "template",
+      "specificityWeight": 92,
+      "argumentSlots": [
+        {
+          "dimension": "context"
+        },
+        {
+          "dimension": "story_type"
+        }
+      ],
+      "syntheticFromPageEntity": {
+        "bundle": "story",
+        "slots": [
+          {
+            "dimension": "context",
+            "strategy": "taxonomy:primary_story_context"
+          },
+          {
+            "dimension": "story_type",
+            "strategy": "taxonomy:first"
+          }
+        ]
+      },
+      "notes": "node--story--full.html.twig renders drupal_view('stories_teaser_cards', 'embed_all', story_context_id, story_type_id)."
+    },
+    {
+      "viewId": "profiles_grid",
+      "displayId": "embed_3",
+      "placementSource": "views_reference_paragraph",
+      "specificityWeight": 98,
+      "notes": "Page context supplies the program term on MBA ambassador pages."
+    },
+    {
+      "viewId": "profiles_grid",
+      "displayId": "embed_4",
+      "placementSource": "views_reference_paragraph",
+      "specificityWeight": 98,
+      "notes": "Program/community ambassador pages often pass program and related context terms via paragraph arguments."
+    },
+    {
+      "viewId": "profiles_grid",
+      "displayId": "embed_5",
+      "placementSource": "views_reference_paragraph",
+      "specificityWeight": 97,
+      "notes": "Program student profile pages rely on page-context program arguments."
+    },
+    {
+      "viewId": "profiles_grid",
+      "displayId": "embed_6",
+      "placementSource": "views_reference_paragraph",
+      "specificityWeight": 99,
+      "notes": "Program-specific community profiles page. Page context supplies the program term."
+    },
+    {
+      "viewId": "profiles_grid",
+      "displayId": "embed_7",
+      "placementSource": "views_reference_paragraph",
+      "specificityWeight": 98,
+      "notes": "Program-specific admissions ambassador page. Page context supplies the program term."
+    },
+    {
+      "viewId": "profiles_grid",
+      "displayId": "embed_8",
+      "placementSource": "views_reference_paragraph",
+      "specificityWeight": 88,
+      "notes": "Profile pages surface related profiles using page taxonomy arguments captured in the crawl."
+    }
+  ]
+}

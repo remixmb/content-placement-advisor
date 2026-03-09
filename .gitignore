@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+*.log
+
+# local tooling
+coverage/
+dist/
+tmp/
+.tmp/
+
+# editor settings
+.vscode/
+.idea/
+
+# OS / temp
+*.swp
+*.swo

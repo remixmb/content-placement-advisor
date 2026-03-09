@@ -1,0 +1,7063 @@
+{
+  "generatedAt": "2026-03-08T20:16:21.782Z",
+  "data": {
+    "contentTypes": {
+      "ampersand_story": [
+        {
+          "dimension": "topics",
+          "vocabulary": "topics",
+          "vocabularyLabel": "Topics",
+          "label": "Topics",
+          "fieldLabels": [
+            "Topics"
+          ],
+          "fieldNames": [
+            "field_topics"
+          ],
+          "required": false
+        }
+      ],
+      "course": [
+        {
+          "dimension": "context",
+          "vocabulary": "context",
+          "vocabularyLabel": "Context",
+          "label": "Courses Context",
+          "fieldLabels": [
+            "Courses Context"
+          ],
+          "fieldNames": [
+            "field_courses_context"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "executive_education_focus",
+          "vocabulary": "executive_education_focus",
+          "vocabularyLabel": "Executive Education Focus",
+          "label": "Executive Education Focus",
+          "fieldLabels": [
+            "Executive Education Focus"
+          ],
+          "fieldNames": [
+            "field_executive_education_focus"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "modality",
+          "vocabulary": "modality",
+          "vocabularyLabel": "Modality",
+          "label": "Modality",
+          "fieldLabels": [
+            "Modality"
+          ],
+          "fieldNames": [
+            "field_modality_vocabulary"
+          ],
+          "required": true
+        }
+      ],
+      "enews_announcement": [
+        {
+          "dimension": "announcement_category",
+          "vocabulary": "announcement_category",
+          "vocabularyLabel": "Announcement category",
+          "label": "Announcement category",
+          "fieldLabels": [
+            "Announcement category"
+          ],
+          "fieldNames": [
+            "field_ert_announcement_category"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "enews_announcement_type",
+          "vocabulary": "enews_announcement_type",
+          "vocabularyLabel": "eNews Announcement Type",
+          "label": "Announcement type",
+          "fieldLabels": [
+            "Announcement type"
+          ],
+          "fieldNames": [
+            "field_announcement_type"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "enews_audience",
+          "vocabulary": "enews_audience",
+          "vocabularyLabel": "eNews Audience",
+          "label": "eNews audience",
+          "fieldLabels": [
+            "eNews audience"
+          ],
+          "fieldNames": [
+            "field_enews_audience"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "organizer",
+          "vocabulary": "organizer",
+          "vocabularyLabel": "Organizer",
+          "label": "Organizer",
+          "fieldLabels": [
+            "Organizer"
+          ],
+          "fieldNames": [
+            "field_ert_announcement_org"
+          ],
+          "required": false
+        }
+      ],
+      "event": [
+        {
+          "dimension": "audience",
+          "vocabulary": "audience",
+          "vocabularyLabel": "Audience",
+          "label": "Audience",
+          "fieldLabels": [
+            "Audience"
+          ],
+          "fieldNames": [
+            "field_audience"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "context",
+          "vocabulary": "context",
+          "vocabularyLabel": "Context",
+          "label": "Event Context",
+          "fieldLabels": [
+            "Event Context"
+          ],
+          "fieldNames": [
+            "field_event_context"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "event_location",
+          "vocabulary": "event_location",
+          "vocabularyLabel": "Event Location",
+          "label": "Event Region",
+          "fieldLabels": [
+            "Event Region"
+          ],
+          "fieldNames": [
+            "field_event_location"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "event_type",
+          "vocabulary": "event_type",
+          "vocabularyLabel": "Event Type",
+          "label": "Event Type",
+          "fieldLabels": [
+            "Event Type"
+          ],
+          "fieldNames": [
+            "field_event_type"
+          ],
+          "required": true
+        },
+        {
+          "dimension": "modality",
+          "vocabulary": "modality",
+          "vocabularyLabel": "Modality",
+          "label": "Modality",
+          "fieldLabels": [
+            "Modality"
+          ],
+          "fieldNames": [
+            "field_modality_vocabulary"
+          ],
+          "required": false
+        }
+      ],
+      "faculty": [
+        {
+          "dimension": "faculty_expertise",
+          "vocabulary": "faculty_expertise",
+          "vocabularyLabel": "Faculty Expertise",
+          "label": "Expertise",
+          "fieldLabels": [
+            "Expertise"
+          ],
+          "fieldNames": [
+            "field_expertise"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "faculty_category",
+          "vocabulary": "faculty_category",
+          "vocabularyLabel": "Faculty Category",
+          "label": "Faculty Category",
+          "fieldLabels": [
+            "Faculty Category"
+          ],
+          "fieldNames": [
+            "field_faculty_category"
+          ],
+          "required": true
+        },
+        {
+          "dimension": "faculty_discipline",
+          "vocabulary": "faculty_discipline",
+          "vocabularyLabel": "Faculty Discipline",
+          "label": "Faculty Discipline",
+          "fieldLabels": [
+            "Faculty Discipline"
+          ],
+          "fieldNames": [
+            "field_faculty_discipline"
+          ],
+          "required": false
+        }
+      ],
+      "impact_story": [
+        {
+          "dimension": "challenge_opportunities",
+          "vocabulary": "challenge_opportunities",
+          "vocabularyLabel": "Challenge & Opportunities",
+          "label": "Opportunity Type",
+          "fieldLabels": [
+            "Opportunity Type"
+          ],
+          "fieldNames": [
+            "field_ert_opportunity_type"
+          ],
+          "required": false
+        }
+      ],
+      "landing_page": [
+        {
+          "dimension": "topics",
+          "vocabulary": "topics",
+          "vocabularyLabel": "Topics",
+          "label": "Topics",
+          "fieldLabels": [
+            "Topics"
+          ],
+          "fieldNames": [
+            "field_topics"
+          ],
+          "required": false
+        }
+      ],
+      "page": [
+        {
+          "dimension": "topics",
+          "vocabulary": "topics",
+          "vocabularyLabel": "Topics",
+          "label": "Topics",
+          "fieldLabels": [
+            "Topics"
+          ],
+          "fieldNames": [
+            "field_topics"
+          ],
+          "required": false
+        }
+      ],
+      "podcast": [
+        {
+          "dimension": "topics",
+          "vocabulary": "topics",
+          "vocabularyLabel": "Topics",
+          "label": "Topics",
+          "fieldLabels": [
+            "Topics"
+          ],
+          "fieldNames": [
+            "field_topics"
+          ],
+          "required": false
+        }
+      ],
+      "podcast_series": [
+        {
+          "dimension": "topics",
+          "vocabulary": "topics",
+          "vocabularyLabel": "Topics",
+          "label": "Topics",
+          "fieldLabels": [
+            "Topics"
+          ],
+          "fieldNames": [
+            "field_topics"
+          ],
+          "required": false
+        }
+      ],
+      "profile": [
+        {
+          "dimension": "affiliations",
+          "vocabulary": "affiliations",
+          "vocabularyLabel": "Affiliations",
+          "label": "Affiliation",
+          "fieldLabels": [
+            "Affiliation"
+          ],
+          "fieldNames": [
+            "field_affiliation"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "area_of_focus",
+          "vocabulary": "area_of_focus",
+          "vocabularyLabel": "Area of Focus",
+          "label": "Area of Focus",
+          "fieldLabels": [
+            "Area of Focus"
+          ],
+          "fieldNames": [
+            "field_area_of_focus"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "location",
+          "vocabulary": "location",
+          "vocabularyLabel": "Location",
+          "label": "Citizenship",
+          "fieldLabels": [
+            "Citizenship"
+          ],
+          "fieldNames": [
+            "field_citizenship"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "global_network_school",
+          "vocabulary": "global_network_school",
+          "vocabularyLabel": "Global Network School",
+          "label": "Global Network",
+          "fieldLabels": [
+            "Global Network"
+          ],
+          "fieldNames": [
+            "field_global_network"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "industry",
+          "vocabulary": "industry",
+          "vocabularyLabel": "Industry",
+          "label": "Industry",
+          "fieldLabels": [
+            "Industry"
+          ],
+          "fieldNames": [
+            "field_industry"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "context",
+          "vocabulary": "context",
+          "vocabularyLabel": "Context",
+          "label": "Profile Context",
+          "fieldLabels": [
+            "Profile Context"
+          ],
+          "fieldNames": [
+            "field_profile_context"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "profile_type",
+          "vocabulary": "profile_type",
+          "vocabularyLabel": "Profile Type",
+          "label": "Profile Type",
+          "fieldLabels": [
+            "Profile Type"
+          ],
+          "fieldNames": [
+            "field_ert_profile_type"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "program",
+          "vocabulary": "program",
+          "vocabularyLabel": "Program",
+          "label": "Program",
+          "fieldLabels": [
+            "Program"
+          ],
+          "fieldNames": [
+            "field_program"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "topics",
+          "vocabulary": "topics",
+          "vocabularyLabel": "Topics",
+          "label": "Topics",
+          "fieldLabels": [
+            "Topics"
+          ],
+          "fieldNames": [
+            "field_topics"
+          ],
+          "required": false
+        }
+      ],
+      "publications": [
+        {
+          "dimension": "context",
+          "vocabulary": "context",
+          "vocabularyLabel": "Context",
+          "label": "Context",
+          "fieldLabels": [
+            "Context"
+          ],
+          "fieldNames": [
+            "field_pub_context"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "topics",
+          "vocabulary": "topics",
+          "vocabularyLabel": "Topics",
+          "label": "Topics",
+          "fieldLabels": [
+            "Topics"
+          ],
+          "fieldNames": [
+            "field_topics"
+          ],
+          "required": false
+        }
+      ],
+      "story": [
+        {
+          "dimension": "story_categories",
+          "vocabulary": "story_categories",
+          "vocabularyLabel": "Story Categories",
+          "label": "Story Categories",
+          "fieldLabels": [
+            "Story Categories"
+          ],
+          "fieldNames": [
+            "field_story_categories"
+          ],
+          "required": false
+        },
+        {
+          "dimension": "context",
+          "vocabulary": "context",
+          "vocabularyLabel": "Context",
+          "label": "Story Context",
+          "fieldLabels": [
+            "Story Context"
+          ],
+          "fieldNames": [
+            "field_story_context"
+          ],
+          "required": true
+        },
+        {
+          "dimension": "story_type",
+          "vocabulary": "story_type",
+          "vocabularyLabel": "Story Type",
+          "label": "Story Type",
+          "fieldLabels": [
+            "Story Type",
+            "Story Type (deprecated)"
+          ],
+          "fieldNames": [
+            "field_ert_story_type",
+            "field_story_type"
+          ],
+          "required": true
+        },
+        {
+          "dimension": "topics",
+          "vocabulary": "topics",
+          "vocabularyLabel": "Topics",
+          "label": "Topics",
+          "fieldLabels": [
+            "Topics"
+          ],
+          "fieldNames": [
+            "field_topics"
+          ],
+          "required": false
+        }
+      ]
+    },
+    "vocabularies": {
+      "affiliations": {
+        "label": "Affiliations"
+      },
+      "announcement_category": {
+        "label": "Announcement category"
+      },
+      "area_of_focus": {
+        "label": "Area of Focus"
+      },
+      "audience": {
+        "label": "Audience"
+      },
+      "center": {
+        "label": "Center"
+      },
+      "challenge_opportunities": {
+        "label": "Challenge & Opportunities"
+      },
+      "context": {
+        "label": "Context"
+      },
+      "enews_announcement_type": {
+        "label": "eNews Announcement Type"
+      },
+      "enews_audience": {
+        "label": "eNews Audience"
+      },
+      "event_context": {
+        "label": "Event Context"
+      },
+      "event_location": {
+        "label": "Event Location"
+      },
+      "event_type": {
+        "label": "Event Type"
+      },
+      "executive_education_focus": {
+        "label": "Executive Education Focus"
+      },
+      "faculty_category": {
+        "label": "Faculty Category"
+      },
+      "faculty_discipline": {
+        "label": "Faculty Discipline"
+      },
+      "faculty_expertise": {
+        "label": "Faculty Expertise"
+      },
+      "global_network_school": {
+        "label": "Global Network School"
+      },
+      "industry": {
+        "label": "Industry"
+      },
+      "localist_audience": {
+        "label": "Localist Audience"
+      },
+      "localist_event_type": {
+        "label": "Localist Event Type"
+      },
+      "localist_groups": {
+        "label": "Localist Groups"
+      },
+      "location": {
+        "label": "Location"
+      },
+      "media_tags": {
+        "label": "Media Tags"
+      },
+      "modality": {
+        "label": "Modality"
+      },
+      "organizer": {
+        "label": "Organizer"
+      },
+      "profile_type": {
+        "label": "Profile Type"
+      },
+      "program": {
+        "label": "Program"
+      },
+      "story_categories": {
+        "label": "Story Categories"
+      },
+      "story_context": {
+        "label": "Story Context"
+      },
+      "story_type": {
+        "label": "Story Type"
+      },
+      "topics": {
+        "label": "Topics"
+      }
+    },
+    "terms": [
+      {
+        "id": "1046",
+        "term": "Adam Smith Society",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "297",
+        "term": "Admissions Ambassadors",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1048",
+        "term": "Africa Business and Society Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1178",
+        "term": "American-Latine Business Association (ALBA) Group",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1049",
+        "term": "Arts and Culture Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1050",
+        "term": "Asian American and Pacific Islander Association",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1051",
+        "term": "Association of Hispanic and Latin American Students",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1052",
+        "term": "Black Business Alliance",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1053",
+        "term": "Business and Politics",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1054",
+        "term": "Business and the Environment Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1155",
+        "term": "Business Students for Racial Equity",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1055",
+        "term": "Case Competition",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1056",
+        "term": "Christian Fellowship",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1057",
+        "term": "Consortium for Graduate Study in Management (CGSM)",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1058",
+        "term": "Consulting Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1059",
+        "term": "Design & Innovation Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1060",
+        "term": "Education Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1061",
+        "term": "Energy Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1062",
+        "term": "Entrepreneurship",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "311",
+        "term": "Euro",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1063",
+        "term": "EuroSOM",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1184",
+        "term": "Fellowship",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1064",
+        "term": "Finance Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1186",
+        "term": "First-Generation",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1065",
+        "term": "Food and Agriculture",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1066",
+        "term": "Food and Wine Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1067",
+        "term": "Forté",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "260",
+        "term": "GBS Admissions Ambassadors",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1068",
+        "term": "General Management and Operations",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1071",
+        "term": "Greater China Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1072",
+        "term": "Healthcare and Life Sciences Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1073",
+        "term": "Hockey Cub",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1074",
+        "term": "Investment Management Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1075",
+        "term": "Japan Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1076",
+        "term": "Jewish Students Association",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "312",
+        "term": "Joint-Degree Program",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1077",
+        "term": "Korea Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1078",
+        "term": "Korean American Business Association",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1079",
+        "term": "Latin Leadership Association",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "257",
+        "term": "MAM Admissions Ambassador",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1156",
+        "term": "Management Science Major",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1080",
+        "term": "Marketing Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1081",
+        "term": "Media and Entertainment",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1083",
+        "term": "Net Impact",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1084",
+        "term": "Nonprofit Board Fellows",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1086",
+        "term": "Out of Office (LGBTQ+ affinity network)",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1087",
+        "term": "Outreach Nonprofit Consulting",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1088",
+        "term": "Partners Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1089",
+        "term": "Private Equity & Venture Capital Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1090",
+        "term": "Public Speaking",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1091",
+        "term": "Real Estate",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1565",
+        "term": "Recruiting Journeys",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1092",
+        "term": "Responsible Investing Group",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1093",
+        "term": "Retail Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "313",
+        "term": "Silver Scholars Program",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1154",
+        "term": "Social Impact Consulting Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1097",
+        "term": "South Asia Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1098",
+        "term": "South Asian Business Forum",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1099",
+        "term": "Southeast Asia Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1047",
+        "term": "Study in Management (CGSM)",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1100",
+        "term": "Technology",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1101",
+        "term": "The Consortium",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1102",
+        "term": "Toigo Fellowship",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations",
+        "parent": "1184"
+      },
+      {
+        "id": "1103",
+        "term": "Veterans Club",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1104",
+        "term": "Women In Management",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1105",
+        "term": "Yale Jackson Institute for Global Affairs",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1106",
+        "term": "Yale Law School",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1107",
+        "term": "Yale School of Architecture",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1108",
+        "term": "Yale School of Drama",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1109",
+        "term": "Yale School of Forestry & Environmental Studies",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1110",
+        "term": "Yale School of Medicine",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1111",
+        "term": "Yale School of Public Health",
+        "vocabulary": "affiliations",
+        "vocabularyLabel": "Affiliations"
+      },
+      {
+        "id": "1555",
+        "term": "CDO Event",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1501",
+        "term": "Club Event",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1507",
+        "term": "Club Meeting",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1568",
+        "term": "Conference",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1545",
+        "term": "Dean's Office Event",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1577",
+        "term": "Office Hours",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1502",
+        "term": "School Event",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1503",
+        "term": "Speaker Event",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1506",
+        "term": "Student Government Event",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1504",
+        "term": "Student Life Event",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "1505",
+        "term": "Study Break",
+        "vocabulary": "announcement_category",
+        "vocabularyLabel": "Announcement category"
+      },
+      {
+        "id": "287",
+        "term": "Asset Management",
+        "vocabulary": "area_of_focus",
+        "vocabularyLabel": "Area of Focus"
+      },
+      {
+        "id": "289",
+        "term": "Healthcare",
+        "vocabulary": "area_of_focus",
+        "vocabularyLabel": "Area of Focus"
+      },
+      {
+        "id": "288",
+        "term": "Sustainability",
+        "vocabulary": "area_of_focus",
+        "vocabularyLabel": "Area of Focus"
+      },
+      {
+        "id": "15",
+        "term": "Alumni",
+        "vocabulary": "audience",
+        "vocabularyLabel": "Audience"
+      },
+      {
+        "id": "16",
+        "term": "Executive Education",
+        "vocabulary": "audience",
+        "vocabularyLabel": "Audience"
+      },
+      {
+        "id": "17",
+        "term": "Prospective Students",
+        "vocabulary": "audience",
+        "vocabularyLabel": "Audience"
+      },
+      {
+        "id": "14",
+        "term": "Students",
+        "vocabulary": "audience",
+        "vocabularyLabel": "Audience"
+      },
+      {
+        "id": "315",
+        "term": "Case Study Research & Development Team (CRDT)",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "107",
+        "term": "Chief Executive Leadership Institute",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "99",
+        "term": "China India Insights Program",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "83",
+        "term": "International Center for Finance",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "1176",
+        "term": "Meng Impact Investment Fund",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "1648",
+        "term": "Program for the Practice of Everyday Leadership",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "105",
+        "term": "Program on Entrepreneurship",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "106",
+        "term": "Program on Financial Stability",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "100",
+        "term": "Program on Social Enterprise, Innovation, and Impact",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "1144",
+        "term": "Program on Stakeholder Innovation & Management",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "1160",
+        "term": "Program on Stakeholder Innovation and Management",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "98",
+        "term": "SOM Lab",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "1173",
+        "term": "Swensen Asset Management Institute",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "1750",
+        "term": "Swensen Asset Management Institute",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "5",
+        "term": "The Broad Center",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "96",
+        "term": "Thurman Arnold Project at Yale",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "134",
+        "term": "Yale Center for Customer Insights",
+        "vocabulary": "center",
+        "vocabularyLabel": "Center"
+      },
+      {
+        "id": "1646",
+        "term": "Building wealth",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1641",
+        "term": "Culture & creativity",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1637",
+        "term": "Economic opportunity",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1638",
+        "term": "Education",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1644",
+        "term": "Entrepreneurship",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1640",
+        "term": "Improving health",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1639",
+        "term": "Investing in society",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1647",
+        "term": "Mission-driven leadership",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1645",
+        "term": "Responsible consumption & production",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1642",
+        "term": "Strengthening communities",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1636",
+        "term": "Sustainability",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1643",
+        "term": "Technology & innovation",
+        "vocabulary": "challenge_opportunities",
+        "vocabularyLabel": "Challenge & Opportunities"
+      },
+      {
+        "id": "1213",
+        "term": "Advisory Board Member Highlights",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "77",
+        "term": "All SOM",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1142",
+        "term": "Alumni",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "975",
+        "term": "Career Development Office",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "110",
+        "term": "Careers",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "116",
+        "term": "Case Studies",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "942",
+        "term": "Case Study Research and Development",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "941",
+        "term": "Cases",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "936",
+        "term": "Center for Business and the Environment",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "944",
+        "term": "Center for Customer Insights",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "95",
+        "term": "Centers",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "925",
+        "term": "Chief Executive Leadership Institute",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "988",
+        "term": "China India Insights Program",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "1619",
+        "term": "Clubs",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1771",
+        "term": "Crafting a Curriculum",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1485",
+        "term": "Day in the Life",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1205",
+        "term": "Discovery Project",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "962",
+        "term": "Doctoral Programs",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "1202",
+        "term": "EMBA GNW",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "992",
+        "term": "Event",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1772",
+        "term": "Event Dispatch",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1182",
+        "term": "Exec Ed Participant Spotlights",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "967",
+        "term": "Executive Education",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "1592",
+        "term": "Faculty",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "976",
+        "term": "Faculty Viewpoints",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1175",
+        "term": "Following Up",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "985",
+        "term": "Future of Global Finance",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "987",
+        "term": "Global Pre-MBA Leadership Program",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "1390",
+        "term": "Headlines",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1484",
+        "term": "Historian's Notebook",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1498",
+        "term": "Homepage Mosaic",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1518",
+        "term": "Inclusive Growth Fellowship",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1512",
+        "term": "Initiative on Leadership and Organization",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "931",
+        "term": "International Center for Finance",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "1185",
+        "term": "Internship Spotlight",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "973",
+        "term": "Joint Degrees",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "1593",
+        "term": "Leaders for All Sectors",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1167",
+        "term": "Making a Difference",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "932",
+        "term": "Master of Advanced Management",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1571"
+      },
+      {
+        "id": "930",
+        "term": "Master's Degree in Asset Management",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1571"
+      },
+      {
+        "id": "950",
+        "term": "Master's Degree in Global Business and Society",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1571"
+      },
+      {
+        "id": "1011",
+        "term": "Master's Degree in Public Education Management",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "949",
+        "term": "Master's Degree in Systemic Risk",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1571"
+      },
+      {
+        "id": "1201",
+        "term": "Master's in Technology Management",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1571"
+      },
+      {
+        "id": "92",
+        "term": "MBA",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1571"
+      },
+      {
+        "id": "928",
+        "term": "MBA For Executives",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "1189",
+        "term": "Media Appearance",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1177",
+        "term": "Meng Impact Investment Fund",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "1359",
+        "term": "Middle East",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1158",
+        "term": "MyPortal",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1146",
+        "term": "New Haven",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1168",
+        "term": "One Minute with...",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "953",
+        "term": "Orientation",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "971",
+        "term": "Our Program Landing Page",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "934",
+        "term": "Program on Entrepreneurship",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "955",
+        "term": "Program on Financial Stability",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "933",
+        "term": "Program on Social Enterprise, Innovation, and Impact",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "1161",
+        "term": "Program on Stakeholder Innovation and Management",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "94",
+        "term": "Programs",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1566",
+        "term": "Recruiting Journeys",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1571",
+        "term": "Residential master's programs",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "1358",
+        "term": "Russia",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1497",
+        "term": "Series",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1499",
+        "term": "Speakers",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1166",
+        "term": "Startup Stories",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "125",
+        "term": "Student Life",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1460",
+        "term": "Student POV",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1174",
+        "term": "Swensen Asset Management Institute",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "926",
+        "term": "The Broad Center",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "95"
+      },
+      {
+        "id": "1738",
+        "term": "Y-SIM Community Insights",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "1766",
+        "term": "Y-SIM Media",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context"
+      },
+      {
+        "id": "968",
+        "term": "Yale Global Executive Leadership Program",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "972",
+        "term": "Yale SOM Healthcare Initiative",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "94"
+      },
+      {
+        "id": "927",
+        "term": "Yale Women",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1159",
+        "term": "YCCI Learning from Leaders",
+        "vocabulary": "context",
+        "vocabularyLabel": "Context",
+        "parent": "1497"
+      },
+      {
+        "id": "1199",
+        "term": "Announcements",
+        "vocabulary": "enews_announcement_type",
+        "vocabularyLabel": "eNews Announcement Type"
+      },
+      {
+        "id": "1204",
+        "term": "Events around Yale",
+        "vocabulary": "enews_announcement_type",
+        "vocabularyLabel": "eNews Announcement Type"
+      },
+      {
+        "id": "1198",
+        "term": "Events at SOM",
+        "vocabulary": "enews_announcement_type",
+        "vocabularyLabel": "eNews Announcement Type"
+      },
+      {
+        "id": "1195",
+        "term": "Doctoral",
+        "vocabulary": "enews_audience",
+        "vocabularyLabel": "eNews Audience"
+      },
+      {
+        "id": "1196",
+        "term": "EMBA",
+        "vocabulary": "enews_audience",
+        "vocabularyLabel": "eNews Audience"
+      },
+      {
+        "id": "1197",
+        "term": "Faculty & Staff",
+        "vocabulary": "enews_audience",
+        "vocabularyLabel": "eNews Audience"
+      },
+      {
+        "id": "1192",
+        "term": "MAM / MMS-AM / MMS-GBS / MMS-SR / MMS-TM",
+        "vocabulary": "enews_audience",
+        "vocabularyLabel": "eNews Audience"
+      },
+      {
+        "id": "1190",
+        "term": "MBA 1st yr / PH-HCMP 1st yr",
+        "vocabulary": "enews_audience",
+        "vocabularyLabel": "eNews Audience"
+      },
+      {
+        "id": "1191",
+        "term": "MBA 2nd yr / PH-HCMP 2nd yr",
+        "vocabulary": "enews_audience",
+        "vocabularyLabel": "eNews Audience"
+      },
+      {
+        "id": "990",
+        "term": "All",
+        "vocabulary": "event_context",
+        "vocabularyLabel": "Event Context"
+      },
+      {
+        "id": "991",
+        "term": "MBA",
+        "vocabulary": "event_context",
+        "vocabularyLabel": "Event Context",
+        "parent": "989"
+      },
+      {
+        "id": "989",
+        "term": "Program",
+        "vocabulary": "event_context",
+        "vocabularyLabel": "Event Context",
+        "parent": "990"
+      },
+      {
+        "id": "1032",
+        "term": "Africa",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "1033",
+        "term": "Asia Pacific",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "1034",
+        "term": "Australia",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "1039",
+        "term": "Canada",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location",
+        "parent": "1038"
+      },
+      {
+        "id": "1036",
+        "term": "Central America & The Caribbean",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "390",
+        "term": "Edward P. Evans Hall",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location",
+        "parent": "1040"
+      },
+      {
+        "id": "1035",
+        "term": "Europe",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "1124",
+        "term": "Indonesia",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "1043",
+        "term": "Mexico",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location",
+        "parent": "1038"
+      },
+      {
+        "id": "1037",
+        "term": "Middle East",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "1042",
+        "term": "Midwest",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location",
+        "parent": "1038"
+      },
+      {
+        "id": "1038",
+        "term": "North America",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "1040",
+        "term": "Northeast",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location",
+        "parent": "1038"
+      },
+      {
+        "id": "1041",
+        "term": "South",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location",
+        "parent": "1038"
+      },
+      {
+        "id": "1045",
+        "term": "South America",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location"
+      },
+      {
+        "id": "1044",
+        "term": "West",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location",
+        "parent": "1038"
+      },
+      {
+        "id": "345",
+        "term": "Yale School of Management",
+        "vocabulary": "event_location",
+        "vocabularyLabel": "Event Location",
+        "parent": "1040"
+      },
+      {
+        "id": "994",
+        "term": "Admissions Events",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type"
+      },
+      {
+        "id": "1206",
+        "term": "Admissions Officer-hosted Event",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "997",
+        "term": "Admissions Panels",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "995",
+        "term": "Admissions Q&A",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1020",
+        "term": "Africa",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "318",
+        "term": "Alumni",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "996",
+        "term": "Asia Pacific",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1021",
+        "term": "Australia",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1149",
+        "term": "Campus Visit",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1010",
+        "term": "Canada",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1013",
+        "term": "Central America & The Caribbean",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "341",
+        "term": "Colloquia",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "330",
+        "term": "Conferences",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "366",
+        "term": "Convening Yale",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1208",
+        "term": "Current College Seniors",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "998",
+        "term": "Current College Students",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "889",
+        "term": "Diversity",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "999",
+        "term": "Diversity Events",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "362",
+        "term": "Economics",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "365",
+        "term": "Education",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1003",
+        "term": "Europe",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "354",
+        "term": "Executive Education",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1018",
+        "term": "Faculty",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1004",
+        "term": "Faculty Events",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "593",
+        "term": "Finance",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "816",
+        "term": "Global Network",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "370",
+        "term": "Healthcare",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1211",
+        "term": "Joint Degree",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "335",
+        "term": "Leaders Forum",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "369",
+        "term": "Leadership",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "882",
+        "term": "LGBTQ+",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "319",
+        "term": "Live Video",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "483",
+        "term": "Marketing (Executive Education)",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1012",
+        "term": "Mexico",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1017",
+        "term": "Middle East",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1007",
+        "term": "Midwest",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1000",
+        "term": "Multi-School Events",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1005",
+        "term": "North America",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1006",
+        "term": "Northeast",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1210",
+        "term": "Off-campus Events",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1015",
+        "term": "On campus",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "380",
+        "term": "Online",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "630",
+        "term": "Other Events",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "685",
+        "term": "Reunions",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1008",
+        "term": "South",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1014",
+        "term": "South America",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "331",
+        "term": "Speaker Event",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "321",
+        "term": "Speakers & Conferences",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1001",
+        "term": "Student Panels",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1207",
+        "term": "Student-hosted Events",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1019",
+        "term": "Sustainability",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1002",
+        "term": "Veteran",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1016",
+        "term": "Virtual Information Session",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "625",
+        "term": "Webinars",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1009",
+        "term": "West",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "892",
+        "term": "Women",
+        "vocabulary": "event_type",
+        "vocabularyLabel": "Event Type",
+        "parent": "994"
+      },
+      {
+        "id": "1022",
+        "term": "Education",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1023",
+        "term": "Finance",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1024",
+        "term": "Global Business",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1025",
+        "term": "Healthcare",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1026",
+        "term": "Innovation",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1027",
+        "term": "Leadership",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1028",
+        "term": "Management",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1029",
+        "term": "Marketing",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1030",
+        "term": "Sustainability",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "1031",
+        "term": "Women’s Leadership",
+        "vocabulary": "executive_education_focus",
+        "vocabularyLabel": "Executive Education Focus"
+      },
+      {
+        "id": "224",
+        "term": "Affiliated Faculty",
+        "vocabulary": "faculty_category",
+        "vocabularyLabel": "Faculty Category"
+      },
+      {
+        "id": "192",
+        "term": "Emeriti Faculty",
+        "vocabulary": "faculty_category",
+        "vocabularyLabel": "Faculty Category"
+      },
+      {
+        "id": "225",
+        "term": "Visiting Instructors & Scholars",
+        "vocabulary": "faculty_category",
+        "vocabularyLabel": "Faculty Category"
+      },
+      {
+        "id": "141",
+        "term": "Yale SOM Faculty",
+        "vocabulary": "faculty_category",
+        "vocabularyLabel": "Faculty Category"
+      },
+      {
+        "id": "136",
+        "term": "Accounting",
+        "vocabulary": "faculty_discipline",
+        "vocabularyLabel": "Faculty Discipline"
+      },
+      {
+        "id": "157",
+        "term": "Economics",
+        "vocabulary": "faculty_discipline",
+        "vocabularyLabel": "Faculty Discipline"
+      },
+      {
+        "id": "142",
+        "term": "Finance",
+        "vocabulary": "faculty_discipline",
+        "vocabularyLabel": "Faculty Discipline"
+      },
+      {
+        "id": "228",
+        "term": "Management",
+        "vocabulary": "faculty_discipline",
+        "vocabularyLabel": "Faculty Discipline"
+      },
+      {
+        "id": "155",
+        "term": "Marketing",
+        "vocabulary": "faculty_discipline",
+        "vocabularyLabel": "Faculty Discipline"
+      },
+      {
+        "id": "165",
+        "term": "Operations",
+        "vocabulary": "faculty_discipline",
+        "vocabularyLabel": "Faculty Discipline"
+      },
+      {
+        "id": "174",
+        "term": "Organizational Behavior",
+        "vocabulary": "faculty_discipline",
+        "vocabularyLabel": "Faculty Discipline"
+      },
+      {
+        "id": "211",
+        "term": "Politics",
+        "vocabulary": "faculty_discipline",
+        "vocabularyLabel": "Faculty Discipline"
+      },
+      {
+        "id": "137",
+        "term": "Accounting",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "248",
+        "term": "Activist Investors",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "231",
+        "term": "Advertising",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1706",
+        "term": "AI",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "166",
+        "term": "Analytics",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "158",
+        "term": "Antitrust & Competition Policy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1130",
+        "term": "Asset Pricing",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1137",
+        "term": "Attention",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "138",
+        "term": "Auditing",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "246",
+        "term": "Banking",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "200",
+        "term": "Bankruptcy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "159",
+        "term": "Behavioral Economics",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "146",
+        "term": "Behavioral Finance",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "190",
+        "term": "Behavioral Science",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "194",
+        "term": "Big Data",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "195",
+        "term": "Brand Management",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1521",
+        "term": "Branding",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "175",
+        "term": "Business Strategy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "212",
+        "term": "Business War Gaming",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "208",
+        "term": "Business-Government Relations",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "177",
+        "term": "Careers",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "220",
+        "term": "CEOs",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "236",
+        "term": "Cities and Regional Planning",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "243",
+        "term": "Collaboration",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "222",
+        "term": "Commodity Markets",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "160",
+        "term": "Competitive Strategy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "232",
+        "term": "Conflicts of Interest",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "191",
+        "term": "Consumer Behavior",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "147",
+        "term": "Corporate Finance",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "139",
+        "term": "Corporate Governance",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "167",
+        "term": "Counter-terrorism",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "161",
+        "term": "Creativity",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "168",
+        "term": "Decision-making",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "216",
+        "term": "Digital Marketing",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "240",
+        "term": "Digital Strategy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "201",
+        "term": "Distress Investing",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "229",
+        "term": "Diversity and Inclusion",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1132",
+        "term": "Econometrics",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "187",
+        "term": "Economic Development",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "148",
+        "term": "Economics",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1374",
+        "term": "Education",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "235",
+        "term": "Elections",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "188",
+        "term": "Emerging Markets",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "149",
+        "term": "Entrepreneurship",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "210",
+        "term": "Environment",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1203",
+        "term": "Environmental, Social, and Governance (ESG)",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1375",
+        "term": "Equity and Fairness",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "209",
+        "term": "Ethics",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "143",
+        "term": "Financial Crises",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "144",
+        "term": "Financial Markets",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "145",
+        "term": "Financial Regulation",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "140",
+        "term": "Financial Reporting",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "217",
+        "term": "Game Theory",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1520",
+        "term": "Gender",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "213",
+        "term": "Global Corporate Strategy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "189",
+        "term": "Globalization",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "196",
+        "term": "Health Care",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "193",
+        "term": "Hedge Funds",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "178",
+        "term": "Human Resources",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "162",
+        "term": "Innovation",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "223",
+        "term": "International Finance",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1707",
+        "term": "International Macroeconomics",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "198",
+        "term": "International Trade",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "179",
+        "term": "Labor Issues",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "180",
+        "term": "Leadership",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1131",
+        "term": "Machine Learning",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1708",
+        "term": "Macroeconomics",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "199",
+        "term": "Manufacturing",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1372",
+        "term": "Market Design",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "156",
+        "term": "Marketing",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "218",
+        "term": "Marketing Strategy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "241",
+        "term": "Matching Markets",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1135",
+        "term": "Mechanism Design",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "150",
+        "term": "Mergers & Acquisitions",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "242",
+        "term": "Methodology",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "247",
+        "term": "Monetary Policy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "249",
+        "term": "Municipalities",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "151",
+        "term": "Mutual Funds",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "214",
+        "term": "National Security & International Order",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "226",
+        "term": "Negotiations",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "202",
+        "term": "Nonprofit Accounting",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "181",
+        "term": "Nonprofit Management",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "205",
+        "term": "Nonprofit Operations",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "237",
+        "term": "Online Marketing",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "169",
+        "term": "Operations",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "170",
+        "term": "Operations Research",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "176",
+        "term": "Organizational Behavior",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "182",
+        "term": "Organizational Design",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "244",
+        "term": "Organizational Ethnography",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1134",
+        "term": "Platform Design",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "171",
+        "term": "Policy Modeling",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1519",
+        "term": "Political Economy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1133",
+        "term": "Pricing",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "204",
+        "term": "Private Equity",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "227",
+        "term": "Product Design",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "238",
+        "term": "Product Management",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1373",
+        "term": "Public and Social Operations",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "250",
+        "term": "Public Finance",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "172",
+        "term": "Public Health",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "251",
+        "term": "Public Procurement",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1136",
+        "term": "Quality Management",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "152",
+        "term": "Real Estate/Housing Markets",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "221",
+        "term": "Regulation",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "203",
+        "term": "Restructuring",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "206",
+        "term": "Service Operations",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "183",
+        "term": "Social Enterprise",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "1212",
+        "term": "Social Impact",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "233",
+        "term": "Social Impact Measurement",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "197",
+        "term": "Social Media",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "154",
+        "term": "Social Networks",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "173",
+        "term": "Sports Analytics",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "184",
+        "term": "Startups",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "163",
+        "term": "Strategy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "207",
+        "term": "Supply Chain",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "230",
+        "term": "Sustainability",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "164",
+        "term": "Technological Innovation",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "215",
+        "term": "Technology Strategy",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "234",
+        "term": "Urban Economic Development",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "153",
+        "term": "Valuation",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "239",
+        "term": "Venture Capital",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "185",
+        "term": "Women in Leadership",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "219",
+        "term": "Word-of-Mouth",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "245",
+        "term": "Work and Occupations",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "186",
+        "term": "Workplace Issues",
+        "vocabulary": "faculty_expertise",
+        "vocabularyLabel": "Faculty Expertise"
+      },
+      {
+        "id": "270",
+        "term": "Asian Institute of Management",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "1162",
+        "term": "Business School, Renmin University of China",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "1163",
+        "term": "Cambridge Judge Business School",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "273",
+        "term": "EGADE Business School, Tecnológico de Monterrey",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "262",
+        "term": "ESMT Berlin",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "272",
+        "term": "FGV Escola de Administração de Empresas de São Paulo",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "264",
+        "term": "Fudan University School of Management",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "259",
+        "term": "HEC Paris",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "279",
+        "term": "Hitotsubashi University, Graduate School of International Corporate Strategy",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "266",
+        "term": "Hong Kong University of Science and Technology Business School",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "267",
+        "term": "IE Business School",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "256",
+        "term": "Indian Institute of Management Bangalore",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "1164",
+        "term": "Indian Institute of Management, Indore",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "1165",
+        "term": "Ko√ß University Graduate School of Business",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "269",
+        "term": "Lagos Business School, Pan-Atlantic University",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "284",
+        "term": "National University of Singapore Business School",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "283",
+        "term": "Pontificia Universidad Católica de Chile School of Business",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "275",
+        "term": "Sa√Ød Business School, University of Oxford",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "294",
+        "term": "Sauder School of Business, University of British Columbia",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "295",
+        "term": "SDA Bocconi School of Management, Bocconi University",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "274",
+        "term": "Seoul National University Business School",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "277",
+        "term": "Strathmore Business School",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "301",
+        "term": "University of Cape Town Graduate School of Business",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "292",
+        "term": "University of Indonesia Faculty of Economics",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "293",
+        "term": "UNSW Business School",
+        "vocabulary": "global_network_school",
+        "vocabularyLabel": "Global Network School"
+      },
+      {
+        "id": "306",
+        "term": "Arts Management",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "282",
+        "term": "Automotive",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "276",
+        "term": "Construction",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "265",
+        "term": "Consulting",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "254",
+        "term": "Consumer Products",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "1179",
+        "term": "Data Analytics",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "1152",
+        "term": "Economic Development",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "285",
+        "term": "Education",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "296",
+        "term": "Energy",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "268",
+        "term": "Entrepreneurship",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "252",
+        "term": "Finance",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "305",
+        "term": "FinTech",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "278",
+        "term": "Government",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "263",
+        "term": "Healthcare, Pharmaceuticals, Biotech",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "291",
+        "term": "Human Capital",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "300",
+        "term": "Impact Investing",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "261",
+        "term": "Manufacturing",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "1187",
+        "term": "Marketing",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "280",
+        "term": "Media/Entertainment",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "281",
+        "term": "Nonprofit",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "271",
+        "term": "Other",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "1188",
+        "term": "Private Equity / Venture Capital",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "286",
+        "term": "Real Estate",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "1153",
+        "term": "Sustainability",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "255",
+        "term": "Technology",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "304",
+        "term": "Transportation",
+        "vocabulary": "industry",
+        "vocabularyLabel": "Industry"
+      },
+      {
+        "id": "1659",
+        "term": "1st Year MBA students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1673",
+        "term": "2nd Year MBA Students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1662",
+        "term": "Doctoral Students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1661",
+        "term": "EMBA students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1664",
+        "term": "GNAM students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1660",
+        "term": "MAM & MMS students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1671",
+        "term": "Partners, Spouses & Family",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1663",
+        "term": "PEM students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1672",
+        "term": "Yale Community",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1666",
+        "term": "Yale Graduate & Professional students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1670",
+        "term": "Yale SOM Alumni",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1669",
+        "term": "Yale SOM community",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1667",
+        "term": "Yale SOM faculty",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1668",
+        "term": "Yale SOM staff",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1665",
+        "term": "Yale Undergraduate students",
+        "vocabulary": "localist_audience",
+        "vocabularyLabel": "Localist Audience"
+      },
+      {
+        "id": "1713",
+        "term": "All Staff Meeting",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1678",
+        "term": "Art Exhibition",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1685",
+        "term": "Book Talk",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1677",
+        "term": "Case Competition",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1675",
+        "term": "Colloquia & Symposia",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1715",
+        "term": "Community Engagement",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1676",
+        "term": "Conferences",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1687",
+        "term": "Dates & Deadlines",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1688",
+        "term": "Faculty Seminar Series",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1679",
+        "term": "Film & Media Screening",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1681",
+        "term": "Info Session",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1674",
+        "term": "Lectures & Talks",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1683",
+        "term": "Livestreams & Webinars",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1714",
+        "term": "Networking",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1684",
+        "term": "Office Hours",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1680",
+        "term": "Panel Discussions & Roundtables",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1686",
+        "term": "Podcast",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1682",
+        "term": "Research Study",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1689",
+        "term": "Workshops",
+        "vocabulary": "localist_event_type",
+        "vocabularyLabel": "Localist Event Type"
+      },
+      {
+        "id": "1690",
+        "term": "Academic Affairs and Student Life (AASL)",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1691",
+        "term": "Admissions",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1692",
+        "term": "Business Operations",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1693",
+        "term": "Career Development Office",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1694",
+        "term": "Chief Executive Leadership Institute",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1695",
+        "term": "Dean's Office",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1696",
+        "term": "Human Resources",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1697",
+        "term": "International Center for Finance",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1698",
+        "term": "Jackson School of Global Affairs",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1699",
+        "term": "Office of Community Engagement and Dialogue (OCED)",
+        "vocabulary": "localist_groups",
+        "vocabularyLabel": "Localist Groups"
+      },
+      {
+        "id": "1112",
+        "term": "Africa",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location"
+      },
+      {
+        "id": "1113",
+        "term": "Asia",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location"
+      },
+      {
+        "id": "1114",
+        "term": "Australia",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location"
+      },
+      {
+        "id": "1120",
+        "term": "Canada",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location",
+        "parent": "1119"
+      },
+      {
+        "id": "1115",
+        "term": "Central/South America",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location"
+      },
+      {
+        "id": "1116",
+        "term": "Europe",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location"
+      },
+      {
+        "id": "1117",
+        "term": "Middle East",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location"
+      },
+      {
+        "id": "1119",
+        "term": "North America",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location"
+      },
+      {
+        "id": "1118",
+        "term": "Oceania",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location"
+      },
+      {
+        "id": "1122",
+        "term": "United States",
+        "vocabulary": "location",
+        "vocabularyLabel": "Location",
+        "parent": "1119"
+      },
+      {
+        "id": "1138",
+        "term": "Evans Hall",
+        "vocabulary": "media_tags",
+        "vocabularyLabel": "Media Tags"
+      },
+      {
+        "id": "1143",
+        "term": "Executive Education",
+        "vocabulary": "media_tags",
+        "vocabularyLabel": "Media Tags"
+      },
+      {
+        "id": "1139",
+        "term": "Faculty",
+        "vocabulary": "media_tags",
+        "vocabularyLabel": "Media Tags"
+      },
+      {
+        "id": "1141",
+        "term": "Global",
+        "vocabulary": "media_tags",
+        "vocabularyLabel": "Media Tags"
+      },
+      {
+        "id": "1169",
+        "term": "myPortal",
+        "vocabulary": "media_tags",
+        "vocabularyLabel": "Media Tags"
+      },
+      {
+        "id": "1181",
+        "term": "Podcast Image",
+        "vocabulary": "media_tags",
+        "vocabularyLabel": "Media Tags"
+      },
+      {
+        "id": "1140",
+        "term": "Programs",
+        "vocabulary": "media_tags",
+        "vocabularyLabel": "Media Tags"
+      },
+      {
+        "id": "1292",
+        "term": "Blended",
+        "vocabulary": "modality",
+        "vocabularyLabel": "Modality"
+      },
+      {
+        "id": "1293",
+        "term": "In-Person",
+        "vocabulary": "modality",
+        "vocabularyLabel": "Modality"
+      },
+      {
+        "id": "1294",
+        "term": "Live Online",
+        "vocabulary": "modality",
+        "vocabularyLabel": "Modality"
+      },
+      {
+        "id": "1295",
+        "term": "Online",
+        "vocabulary": "modality",
+        "vocabularyLabel": "Modality"
+      },
+      {
+        "id": "1379",
+        "term": "1stGenYale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1221",
+        "term": "Academic Affairs & Student Life",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1297",
+        "term": "Academic Affairs and Student Life",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1307",
+        "term": "Academics",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1370",
+        "term": "Adam Smith Society",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1363",
+        "term": "Admissions",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1539",
+        "term": "Aerospace & Defense Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1584",
+        "term": "Africa Business &  Society Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1259",
+        "term": "Africa Business & Society",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1765",
+        "term": "African Business & Society Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1754",
+        "term": "AI at Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1728",
+        "term": "AI at Yale & Yale Library",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1223",
+        "term": "Alumni Relations",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1275",
+        "term": "American-Latine Business Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1469",
+        "term": "Artificial Intelligence Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1270",
+        "term": "Artificial Intelligence Group",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1274",
+        "term": "Arts and Culture Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1411",
+        "term": "Arts Council of Greater New Haven & Yale SOM",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1327",
+        "term": "Asian, Asian-American and Pacific Islander Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1302",
+        "term": "Ask Me Anything (AMA)",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1600",
+        "term": "Aspire Fellow's Program",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1252",
+        "term": "Association of Hispanic and Latin American Students",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1322",
+        "term": "Behavioral Lab",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1630",
+        "term": "Being Well at Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1448",
+        "term": "Belonging at Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1450",
+        "term": "Belonging at Yale & Yale Schwarzman Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1725",
+        "term": "Belonging at Yale: Cultivating Conversation",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1235",
+        "term": "Black Business Alliance",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1473",
+        "term": "Black Business Alliance",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1388",
+        "term": "Blockchain Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1609",
+        "term": "Blue Center for Global Strategic Assessment",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1279",
+        "term": "Board Game Group",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1300",
+        "term": "Board Game Group",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1303",
+        "term": "Business and Politics Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1321",
+        "term": "Business and the Environment Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1445",
+        "term": "Business Operations",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1625",
+        "term": "CARE & Office of Inclusion and  Diversity",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1419",
+        "term": "Career Development Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1578",
+        "term": "Case Study Research & Development Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1291",
+        "term": "CBEY",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1470",
+        "term": "CBEY & SOM Business & Environment Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1376",
+        "term": "CBEY & The Conservation Network",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1352",
+        "term": "CBEY Office of Career & Professional Development",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1500",
+        "term": "Center for Algorithms, Data, and Market Design at Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1225",
+        "term": "Center for Customer Insights",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1560",
+        "term": "Center for the Study of American Politics",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1389",
+        "term": "Chief Executive Leadership Institute",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1265",
+        "term": "Christian Fellowship",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1333",
+        "term": "City of New Haven",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1334",
+        "term": "Cohort: Blue",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1319",
+        "term": "Cohort: Gold",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1277",
+        "term": "Cohort: Green",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1474",
+        "term": "Cohort: Orange",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1400",
+        "term": "Cohort: Purple",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1392",
+        "term": "Cohort: Red",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1325",
+        "term": "Cohort: Silver",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1409",
+        "term": "Communications",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1435",
+        "term": "Communications Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1628",
+        "term": "Communications Video Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1531",
+        "term": "Computational Social Science Workshop Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1262",
+        "term": "Consortium - Yale Chapter",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1220",
+        "term": "Consulting Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1730",
+        "term": "Council on East Asian Studies",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1268",
+        "term": "Data Analytics Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1299",
+        "term": "Data Analytics Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1579",
+        "term": "Data-Intensive Social Science Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1575",
+        "term": "David Geffen School of Drama at Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1329",
+        "term": "Dean‚Äôs Office Events",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1605",
+        "term": "Dean's Distinguished Lecture Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1396",
+        "term": "Dean's Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1456",
+        "term": "Dean's Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1510",
+        "term": "Dean's Office & HR",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1335",
+        "term": "Dean's Office & The City of New Haven",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1764",
+        "term": "Dean's Office & Title IX Working Group",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1397",
+        "term": "Dean's Office Events",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1432",
+        "term": "Dean's Office Speaker Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1241",
+        "term": "Dean's Office Speaker Series & Events",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1649",
+        "term": "Deputy Dean's Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1773",
+        "term": "Deputy Dean's Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1328",
+        "term": "Design and Innovation Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1407",
+        "term": "Development & Alumni Relations",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1463",
+        "term": "Development and Alumni Relations",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1743",
+        "term": "Downtown",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1421",
+        "term": "Economic Development and Arts & Culture Clubs",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1287",
+        "term": "Economic Development Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1761",
+        "term": "Editing Press",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1226",
+        "term": "Education Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1515",
+        "term": "Elm Shakespeare & Whitney Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1269",
+        "term": "Energy Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1462",
+        "term": "Entrepreneurship Through Acquisition Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1576",
+        "term": "ESMT Berlin",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1324",
+        "term": "EuroSOM",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1553",
+        "term": "Events Management Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1378",
+        "term": "Executive Education",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1229",
+        "term": "Facilities",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1316",
+        "term": "Facilities & Operations",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1653",
+        "term": "Facilities & Operations + HR",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1517",
+        "term": "Faculty Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1365",
+        "term": "FASPE",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1573",
+        "term": "Fellowships at Auschwitz for the Study of Professional Ethics",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1243",
+        "term": "Finance Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1216",
+        "term": "Financial Aid",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1436",
+        "term": "Financial Aid",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1618",
+        "term": "Financial Aid Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1569",
+        "term": "Financial Aid Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1464",
+        "term": "First-Generation, Low-Income Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1286",
+        "term": "Fit for Thought",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1236",
+        "term": "Food, Agribusiness, and Beverage Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1339",
+        "term": "Future Leaders of Yale and Office of Diversity & Inclusion",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1256",
+        "term": "General Management Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1621",
+        "term": "George Herbert Walker Lecture Fund",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1457",
+        "term": "Global Health Justice Partnership & Yale LGBTQ Mental Health Initiative",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1422",
+        "term": "Global Initiatives Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1415",
+        "term": "Global Initiatives Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1386",
+        "term": "Global Network & Y-SIM",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1413",
+        "term": "Global Network for Advanced Management",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1589",
+        "term": "Global Table at the Schwarzman Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1588",
+        "term": "GNAM Speaker Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1281",
+        "term": "Golf Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1245",
+        "term": "Greater China Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1610",
+        "term": "HAVEN Free Clinic & Yale Medicine",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1271",
+        "term": "Healthcare and Life Sciences Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1420",
+        "term": "Healthcare Conference",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1289",
+        "term": "Hockey Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1230",
+        "term": "HR",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1632",
+        "term": "HR & OID",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1326",
+        "term": "HR & YPFS",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1273",
+        "term": "Impact Investing Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1285",
+        "term": "Inclusive Economic Development Lab",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1441",
+        "term": "Inclusive Economic Development Lab  & PSEII",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1622",
+        "term": "Innovation & Entrepreneurship Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1371",
+        "term": "Institution for Social and Policy Studies",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1368",
+        "term": "Internal Communications",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1775",
+        "term": "Internal Communications",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1367",
+        "term": "Internal Communications Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1244",
+        "term": "International Center for Finance",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1438",
+        "term": "International Center for Finance & CBEY",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1489",
+        "term": "International Festival of Arts and Ideas",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1246",
+        "term": "Internship Fund",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1263",
+        "term": "Investment Management Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1233",
+        "term": "It's Your Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1255",
+        "term": "Jackson School of Global Affairs",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1454",
+        "term": "Jackson School of Global Affairs & MacMillan Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1541",
+        "term": "Japan Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1276",
+        "term": "Jewish Students Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1267",
+        "term": "Korea Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1332",
+        "term": "Librarian Services",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1355",
+        "term": "Library Services",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1231",
+        "term": "Marketing Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1744",
+        "term": "Master Management Studies",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1461",
+        "term": "MBA Admissions",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1570",
+        "term": "MBA Admissions & Poorvu Center for Teaching and Learning",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1219",
+        "term": "MBA Core Tutoring",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1215",
+        "term": "MBA for Executives Event Registration",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1433",
+        "term": "MBA for Executives Program",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1218",
+        "term": "MBA For Executives: Extended Classroom",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1249",
+        "term": "Media, Entertainment & Sports Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1404",
+        "term": "Middle East and North Africa Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1331",
+        "term": "MIINT",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1595",
+        "term": "MIINT Program",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1748",
+        "term": "MMS-AM Admissions",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1769",
+        "term": "Muslim Students Association & OCED",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1228",
+        "term": "Net Impact",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1425",
+        "term": "Net Impact Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1530",
+        "term": "New Haven Chamber Orchestra",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1731",
+        "term": "New Haven PAUSE Project",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1548",
+        "term": "New Haven Reads",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1257",
+        "term": "Nonprofit Board Fellows",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1387",
+        "term": "Not Important",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1654",
+        "term": "Office of Community Engagement and Dialogue",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1752",
+        "term": "Office of Community Engagement and Dialogue & Women in Management",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1282",
+        "term": "Office of Community Liaison",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1237",
+        "term": "Office of Community Liasion",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1224",
+        "term": "Office of Inclusion & Diversity",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1296",
+        "term": "Office of Inclusion and Diversity",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1406",
+        "term": "Office of International Affairs, Yale University",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1356",
+        "term": "Office of International Students & Scholars",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1604",
+        "term": "Office of the Provost",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1704",
+        "term": "Office of the Secretary and Vice President for University Life",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1377",
+        "term": "Office of the Secretary, Yale University",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1434",
+        "term": "OID & SOM Hospitality",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1308",
+        "term": "Organizational Behavior Faculty Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1266",
+        "term": "Out Of Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1217",
+        "term": "Partners Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1631",
+        "term": "PhD Social Committee",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1369",
+        "term": "Philanthropy Conference",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1540",
+        "term": "Poynter Fellowship in Journalism",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1709",
+        "term": "Poynter Fellowship in Journalism & Cultivating Conversation",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1702",
+        "term": "Poynter Fellowship in Journalism & Cultivating Conversations",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1737",
+        "term": "President's Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1247",
+        "term": "Private Equity & Venture Capital Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1232",
+        "term": "Professional Communication Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1360",
+        "term": "Profs. Ed Kaplan, Toby Moskowitz, Barry Nalebuff, Edieal Pinker, Jeff Sonnenfeld, and Gal Zauberman.",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1478",
+        "term": "Program on Entrepreneurship",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1399",
+        "term": "Program on Entrepreneurship",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1606",
+        "term": "Program on Ethics, Politics and Economics",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1283",
+        "term": "Program on Refugees, Forced Displacement & Humanitarian Responses",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1402",
+        "term": "Program on Refugees, Forced Displacement, and Humanitarian Responses",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1239",
+        "term": "Program on Social Enterprise",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1310",
+        "term": "Program on Social Enterprise & WIM",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1533",
+        "term": "Program on Social Enterprise, Innovation, and Impact",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1320",
+        "term": "Program on Stakeholder Innovation and Management",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1298",
+        "term": "Real Estate Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1393",
+        "term": "Register for Zoom link",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1306",
+        "term": "Registrar",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1278",
+        "term": "Retail Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1337",
+        "term": "SH",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1538",
+        "term": "SHARE Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1477",
+        "term": "SI Lab",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1418",
+        "term": "Ski & Snowboard Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1250",
+        "term": "Social Impact Consulting Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1272",
+        "term": "Social Impact Lab",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1384",
+        "term": "Social Impact Lab",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1616",
+        "term": "Social Impact Lab & Out of Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1443",
+        "term": "Social Media Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1403",
+        "term": "Social Sector Club Council & Net Impact",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1475",
+        "term": "SOM Communications: Video Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1494",
+        "term": "SOM Digital Media Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1745",
+        "term": "SOM Facilities",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1723",
+        "term": "SOM Facilities & SOM HR",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1362",
+        "term": "SOM faculty including Profs. Ed Kaplan, Toby Moskowitz, Barry Nalebuff, Edieal Pinker, Jeff Sonnenfeld, and Gal Zauberman.",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1491",
+        "term": "SOM Historian",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1309",
+        "term": "SOM Hospitality",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1330",
+        "term": "SOM Hospitality",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1724",
+        "term": "SOM Hospitality & OCED",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1528",
+        "term": "SOM Hospitality & Office of Inclusion & Diversity",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1354",
+        "term": "SOM IT",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1214",
+        "term": "SOM Orientation 2023",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1496",
+        "term": "SOM Orientation 2024",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1634",
+        "term": "SOM Orientation 2025",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1655",
+        "term": "SOM Podcasts",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1284",
+        "term": "SOM Run",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1301",
+        "term": "SOM Run",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1546",
+        "term": "SOM Staff Sustainability Committee",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1729",
+        "term": "SOM Student & SOM Staff Sustainable Committees + Facilities & Operations",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1315",
+        "term": "SOM Sustainability Committee & CBEY",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1264",
+        "term": "SOM United Soccer Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1705",
+        "term": "SOMIT",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1260",
+        "term": "South Asia Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1734",
+        "term": "South Asia Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1261",
+        "term": "Southeast Asia Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1254",
+        "term": "Startup & Entrepreneurship Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1567",
+        "term": "Student Accessibility Services",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1526",
+        "term": "Student Clubs",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1572",
+        "term": "Student Conferences",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1607",
+        "term": "Student Conferences Committee",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1222",
+        "term": "Student Government",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1558",
+        "term": "Student Government  Health & Wellness Committee",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1585",
+        "term": "Student Government & Internal Communications Team",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1459",
+        "term": "Student Government Sustainability",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1547",
+        "term": "Student Health & Wellness Committee",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1382",
+        "term": "Student Life",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1251",
+        "term": "Student Life Committee",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1280",
+        "term": "Students for Racial Equity",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1756",
+        "term": "Swensen Asset Management Institute",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1658",
+        "term": "Swensen Institute of Asset Management",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1465",
+        "term": "Tech & Society Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1467",
+        "term": "Tech Club, AI Club  &Program on Entrepreneurship",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1258",
+        "term": "Technology Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1305",
+        "term": "The Artsy Fund",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1736",
+        "term": "The Artsy Fund",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1493",
+        "term": "The Broad Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1582",
+        "term": "The Broad Center & Education Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1466",
+        "term": "The Council on Anti-Racism",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1594",
+        "term": "The Gordon Grand Lecture Fellowship",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1405",
+        "term": "The Institution for Social and Policy Studies",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1234",
+        "term": "The International Center for Finance",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1597",
+        "term": "The Program on Social Enterprise Innovation and Impact",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1710",
+        "term": "The Shops at Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1755",
+        "term": "The Swensen Institute",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1554",
+        "term": "The Tsai Leadership Program",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1583",
+        "term": "The Yale Law School Center for the Study of Corporate Law",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1513",
+        "term": "The Yale SOM Operations Eli Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1522",
+        "term": "The Yale SOM Operations Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1364",
+        "term": "The Yale SOM Operations Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1361",
+        "term": "This talk is sponsored by a group of SOM faculty including Profs. Ed Kaplan, Toby Moskowitz, Barry Nalebuff, Edieal Pinker, Jeff Sonnenfeld, and Gal Zauberman.",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1746",
+        "term": "Tim Shea",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1763",
+        "term": "Title IX at Yale SOM",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1338",
+        "term": "Title IX Working Group",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1767",
+        "term": "Title IX Working Group, Social Impact Lab, Media, Entertainment & Sports Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1656",
+        "term": "Town Green District",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1762",
+        "term": "Trumbull College",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1317",
+        "term": "Tsai Center for Innovative Thinking",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1652",
+        "term": "Tsai City",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1424",
+        "term": "Tsai CITY & CBEY",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1423",
+        "term": "Tsai CITY + CBEY Planetory Innovator Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1719",
+        "term": "United Way Greater New Haven",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1242",
+        "term": "Veterans Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1227",
+        "term": "Voices",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1240",
+        "term": "Wilderness Leadership Development",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1238",
+        "term": "Wine Society",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1248",
+        "term": "Women In Management",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1442",
+        "term": "Women In Management Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1770",
+        "term": "Women's Faculty Forum",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1479",
+        "term": "Women's Mental Health Conference",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1398",
+        "term": "Working Women's Network",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1735",
+        "term": "Wu Tsai Institute & Yale Peabody Museum",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1439",
+        "term": "Wu Tsai Institute at Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1739",
+        "term": "Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1524",
+        "term": "Yale  Poorvu Center for Teaching and Learning",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1557",
+        "term": "Yale  SOM Arts & Culture Club + Yale Blockchain Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1488",
+        "term": "Yale Affinity Groups",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1426",
+        "term": "Yale Africa Innovation Symposium II",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1591",
+        "term": "Yale Artificial Intelligence Association & Y-SIM",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1733",
+        "term": "Yale Athletics",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1615",
+        "term": "Yale Athletics",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1751",
+        "term": "Yale Biotech Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1614",
+        "term": "Yale Black Business Alliance",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1727",
+        "term": "Yale Black Studies Department",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1596",
+        "term": "Yale Blockchain Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1516",
+        "term": "Yale Campus Health",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1758",
+        "term": "Yale Campus Health",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1336",
+        "term": "Yale Campus Security",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1620",
+        "term": "Yale Center Beijing",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1703",
+        "term": "Yale Center Beijing & Yale SOM",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1601",
+        "term": "Yale Center for British Art",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1490",
+        "term": "Yale Center for British Arts",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1304",
+        "term": "Yale Center for Business & the Environment",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1253",
+        "term": "Yale Center for Customer Insights",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1740",
+        "term": "Yale Center for Environmental Justice",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1617",
+        "term": "Yale Center for Environmental Law and Policy",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1612",
+        "term": "Yale Center for International Finance",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1721",
+        "term": "Yale Center for International Finance & Yale Alumni Real Estate Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1437",
+        "term": "Yale Center for International Finance and Yale SOM AI Group",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1760",
+        "term": "Yale Center for the Study of Corporate Law",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1726",
+        "term": "Yale Clean Energy Conference & Dean's Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1495",
+        "term": "Yale College",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1711",
+        "term": "Yale College",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1747",
+        "term": "Yale Committee on Trust in Higher Education",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1624",
+        "term": "Yale Department of Psychiatry.",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1366",
+        "term": "Yale Digital Ethics Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1458",
+        "term": "Yale Economic Growth Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1732",
+        "term": "Yale Economics Department & Sky Campus Wellness",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1602",
+        "term": "Yale Engineering",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1741",
+        "term": "Yale Entrepreneurial Society & The Yale Table",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1529",
+        "term": "Yale Faculty Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1288",
+        "term": "Yale Grad Crew",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1380",
+        "term": "Yale Grad Rugby Football Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1525",
+        "term": "Yale Health",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1718",
+        "term": "Yale Health",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1410",
+        "term": "Yale Health Plan",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1537",
+        "term": "Yale HR-United Way",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1563",
+        "term": "Yale Hunger and Homelessness Action Project",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1613",
+        "term": "Yale Hunger and Homelessness Action Project",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1427",
+        "term": "Yale Informational Technology Services",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1312",
+        "term": "Yale Insights",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1480",
+        "term": "Yale Institute for Biospheric Studies",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1712",
+        "term": "Yale Institute for Global Health",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1385",
+        "term": "Yale Institution for Social and Policy Studies",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1564",
+        "term": "Yale Jackson School of Global Affairs",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1453",
+        "term": "Yale Law & Business Society & The Chae Initiative in Private Sector Leadership",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1381",
+        "term": "Yale Law Center for the Study of Corporate Law",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1313",
+        "term": "Yale Law School",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1449",
+        "term": "Yale Law School & Thurman Arnold Project at Yale",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1716",
+        "term": "Yale Law School & Yale School of Public Health",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1651",
+        "term": "Yale Law School & Yale School of the Environment",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1523",
+        "term": "Yale Law School Center for the Study of Corporate Law",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1447",
+        "term": "Yale Law School Ludwig Program in Public Sector Leadership",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1657",
+        "term": "Yale Learn and Grow",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1483",
+        "term": "Yale LGBTQ",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1650",
+        "term": "Yale LGBTQ Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1508",
+        "term": "Yale Library",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1428",
+        "term": "Yale MacMillan Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1511",
+        "term": "Yale Marketing Seminar",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1429",
+        "term": "Yale Marketing Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1468",
+        "term": "Yale Marketing Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1536",
+        "term": "Yale Marketing Seminar Series",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1440",
+        "term": "Yale News",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1722",
+        "term": "Yale Office of Employee Engagement & Workplace Culture",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1598",
+        "term": "Yale Office of Inclusion & Diversity & Yale Working Women's Network",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1482",
+        "term": "Yale Office of International Affairs",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1394",
+        "term": "Yale Office of LGBTQ Resources",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1514",
+        "term": "Yale Office of Strategic Analysis",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1472",
+        "term": "Yale Office of Sustainability",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1701",
+        "term": "Yale Office of the President",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1556",
+        "term": "Yale Office of the Secretary & Vice President for Student Life",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1753",
+        "term": "Yale Peabody Museum",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1417",
+        "term": "Yale Philanthrophy",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1757",
+        "term": "Yale Philanthropy Conference",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1603",
+        "term": "Yale Planetary Solutions",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1446",
+        "term": "Yale Planetary Solutions & Yale MacMillan International Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1587",
+        "term": "Yale Politics Initiative",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1700",
+        "term": "Yale Postdoctoral Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1581",
+        "term": "Yale Program on Entrepreneurship",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1430",
+        "term": "Yale Program on Financial Security",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1590",
+        "term": "Yale Program on Financial Stability",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1323",
+        "term": "Yale Program on Stakeholder Innovation and Management",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1717",
+        "term": "Yale School of Arr",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1720",
+        "term": "Yale School of Art",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1318",
+        "term": "Yale School of Engineering and Applied Science",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1455",
+        "term": "Yale School of Management Education Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1314",
+        "term": "Yale School of Public Health",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1561",
+        "term": "Yale School of Public Health",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1452",
+        "term": "Yale School of Public Health & MacMillan Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1383",
+        "term": "Yale School of the Environment",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1559",
+        "term": "Yale Schwarzman Center",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1774",
+        "term": "Yale Schwarzman Center  & Yale Hospitality",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1580",
+        "term": "Yale SOM Artificial Intelligence Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1535",
+        "term": "Yale SOM Community",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1532",
+        "term": "Yale SOM Dean's Office & Yale Clean Energy Collaborative",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1586",
+        "term": "Yale SOM Education Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1357",
+        "term": "Yale SOM Faculty",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1395",
+        "term": "Yale SOM Faculty Honors",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1481",
+        "term": "Yale SOM FLI Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1451",
+        "term": "Yale SOM Healthcare & Life Sciences Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1401",
+        "term": "Yale SOM Hospitality",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1476",
+        "term": "Yale SOM Innovation and Entrepreneurship Seminar",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1608",
+        "term": "Yale SOM Office of Inclusion & Diversity",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1412",
+        "term": "Yale SOM Operations Department",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1599",
+        "term": "Yale SOM PE/VC Club & YANIS",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1626",
+        "term": "Yale SOM Staff Sustainability Interest Group",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1471",
+        "term": "Yale SOM Sustainability Committee",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1534",
+        "term": "Yale Student Health Department",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1627",
+        "term": "Yale Student UFO Society",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1768",
+        "term": "Yale Taiwanese Student Association",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1414",
+        "term": "Yale Tango Club",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1509",
+        "term": "Yale Today",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1416",
+        "term": "Yale University",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1311",
+        "term": "Yale University",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1431",
+        "term": "Yale University Chaplain's Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1629",
+        "term": "Yale University International Operations & Compliance Committee",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1623",
+        "term": "Yale University Library",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1562",
+        "term": "Yale University Office of the President",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1759",
+        "term": "Yale University President's Office",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1742",
+        "term": "Yale University Veteran and Military Affairs",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1408",
+        "term": "Yale University Working Women's Network",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1353",
+        "term": "Yale Ventures",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1444",
+        "term": "Yale Ventures",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1527",
+        "term": "Yale Ventures & Yale Engineering Innovators",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1633",
+        "term": "Yale Women Faculty Forum",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1492",
+        "term": "Yale-USP Strategic Partnership Initiatives",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1391",
+        "term": "YHHAP",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1290",
+        "term": "YPFS & Yale Jackson School of Global Affairs",
+        "vocabulary": "organizer",
+        "vocabularyLabel": "Organizer"
+      },
+      {
+        "id": "1549",
+        "term": "Alumni",
+        "vocabulary": "profile_type",
+        "vocabularyLabel": "Profile Type"
+      },
+      {
+        "id": "1552",
+        "term": "Ambassador",
+        "vocabulary": "profile_type",
+        "vocabularyLabel": "Profile Type"
+      },
+      {
+        "id": "1550",
+        "term": "Faculty",
+        "vocabulary": "profile_type",
+        "vocabularyLabel": "Profile Type"
+      },
+      {
+        "id": "1551",
+        "term": "Student",
+        "vocabulary": "profile_type",
+        "vocabularyLabel": "Profile Type"
+      },
+      {
+        "id": "79",
+        "term": "Doctoral Programs",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "1635",
+        "term": "Double Degrees",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "87",
+        "term": "Joint Programs",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "1183",
+        "term": "M2M Pathways",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "81",
+        "term": "Master of Advanced Management",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "84",
+        "term": "Master’s Degree in Global Business & Society",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "85",
+        "term": "Master’s Degree in Public Education Management",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "86",
+        "term": "Master’s Degree in Systemic Risk",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "82",
+        "term": "Master’s in Asset Management",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "1200",
+        "term": "Master's in Technology Management",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "4",
+        "term": "MBA",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "80",
+        "term": "MBA for Executives",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "90",
+        "term": "Yale Silver Scholars",
+        "vocabulary": "program",
+        "vocabularyLabel": "Program"
+      },
+      {
+        "id": "1170",
+        "term": "Announcement",
+        "vocabulary": "story_type",
+        "vocabularyLabel": "Story Type"
+      },
+      {
+        "id": "974",
+        "term": "Blog",
+        "vocabulary": "story_type",
+        "vocabularyLabel": "Story Type"
+      },
+      {
+        "id": "1157",
+        "term": "Five questions",
+        "vocabulary": "story_type",
+        "vocabularyLabel": "Story Type"
+      },
+      {
+        "id": "924",
+        "term": "News",
+        "vocabulary": "story_type",
+        "vocabularyLabel": "Story Type"
+      },
+      {
+        "id": "130",
+        "term": "Accounting",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "109",
+        "term": "Admissions",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "1749",
+        "term": "AI (Artificial Intelligence)",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "120",
+        "term": "Alumni",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "958",
+        "term": "Arts Management",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "310",
+        "term": "Asset Management",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "123",
+        "term": "Behavioral",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "940",
+        "term": "Black Lives Matter",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "983",
+        "term": "CEOs",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "253",
+        "term": "Community",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "980",
+        "term": "Competitive Strategy",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "954",
+        "term": "Conferences",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "298",
+        "term": "Consulting",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "303",
+        "term": "Consumer Products",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "939",
+        "term": "COVID19",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "124",
+        "term": "Curriculum",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "945",
+        "term": "Data",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "943",
+        "term": "Design &amp; Innovation",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "132",
+        "term": "Diversity and Inclusion",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "133",
+        "term": "Economic Development",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "937",
+        "term": "Economics",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "121",
+        "term": "Education",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "308",
+        "term": "Energy",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "127",
+        "term": "Entrepreneurship",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "1543",
+        "term": "Events",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "119",
+        "term": "Faculty",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "111",
+        "term": "Finance",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "947",
+        "term": "Financial Crises",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "959",
+        "term": "Financial History",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "978",
+        "term": "FinTech",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "117",
+        "term": "Global Business",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "126",
+        "term": "Global Network",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "966",
+        "term": "Global Network Week",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "952",
+        "term": "Global Social Entrepreneurship",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "956",
+        "term": "Government",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "122",
+        "term": "Healthcare",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "1611",
+        "term": "High Tech Webinars",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "957",
+        "term": "Human Capital",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "929",
+        "term": "Impact",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "965",
+        "term": "Impact Investing",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "131",
+        "term": "Innovation",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "951",
+        "term": "Internships",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "963",
+        "term": "Investing",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "108",
+        "term": "Leadership",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "986",
+        "term": "Manufacturing",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "112",
+        "term": "Marketing",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "307",
+        "term": "Media/Entertainment",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "299",
+        "term": "Nonprofit",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "118",
+        "term": "Operations",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "113",
+        "term": "Organizational Behavior",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "948",
+        "term": "Politics",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "961",
+        "term": "Public Policy",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "309",
+        "term": "Real Estate",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "114",
+        "term": "Social Enterprise",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "1147",
+        "term": "Social Impact",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "1145",
+        "term": "Stakeholder Capitalism",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "1542",
+        "term": "Student Experience",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "115",
+        "term": "Sustainability",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "302",
+        "term": "Technology",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "981",
+        "term": "Women's Leadership",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      },
+      {
+        "id": "1544",
+        "term": "Yale University",
+        "vocabulary": "topics",
+        "vocabularyLabel": "Topics"
+      }
+    ]
+  }
+}

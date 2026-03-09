@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "extract-views": "tsx src/commands/extractViews.ts",
+    "scan-crawl": "tsx src/commands/scanCrawl.ts",
+    "export-view-reference-args": "tsx src/commands/exportViewReferenceRuntimeArgs.ts",
+    "build-placement-map": "tsx src/commands/buildPlacementMap.ts",
+    "report-inferred-placements": "tsx src/commands/reportInferredPlacements.ts",
+    "extract-taxonomies": "tsx src/commands/extractContentTaxonomies.ts",
+    "build-advisor-ui": "esbuild src/ui/app.ts --bundle --format=esm --target=es2020 --platform=browser --outfile=tools/content-placement-advisor/app.js --sourcemap && cp placement-map.json tools/content-placement-advisor/placement-map.json && cp content-taxonomies.json tools/content-placement-advisor/content-taxonomies.json",
+    "advisor:refresh": "npm run extract-views && npm run scan-crawl -- --crawl-dir \"Crawl 2026-03-05\" && npm run extract-taxonomies && npm run build-placement-map && npm run build-advisor-ui",
+    "advisor": "npm run build-advisor-ui && python3 -m http.server 4173 --bind 127.0.0.1 -d tools/content-placement-advisor",
+    "advisor:start": "npm run advisor:refresh && python3 -m http.server 4173 --bind 127.0.0.1 -d tools/content-placement-advisor"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "csv-parse": "^6.1.0",
+    "fast-glob": "^3.3.3",
+    "js-yaml": "^4.1.1",
+    "minimist": "^1.2.8",
+    "mjml": "^4.15.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "esbuild": "^0.27.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "label": "CRDT: Content",
+    "paths": [
+      "/case-studies"
+    ],
+    "termsByContentType": {
+      "story": {
+        "dimension": "context",
+        "values": [
+          "942"
+        ]
+      }
+    }
+  }
+]
