@@ -10,63 +10,59 @@
 
 <body>
   <main id="app">
-    <div class="left-panel">
-      <header>
-        <h1>Content Placement Advisor</h1>
-        <p>Choose a content type and taxonomy terms to preview where the content will surface across Yale SOM pages.</p>
-        <div class="workflow-toggle"
-          style="margin-top: 1rem; padding: 1rem; background: #f0f4f8; border-radius: 4px; border: 1px solid #dcdcdc;">
-          <strong style="display:block; margin-bottom: 0.5rem; color: #333;">Why are you using this tool?</strong>
-          <label style="margin-right: 1.5rem; cursor: pointer;">
-            <input type="radio" name="workflow-mode" value="proactive" checked>
-            <strong>Proactive:</strong> Where will this go?
-          </label>
-          <label style="cursor: pointer;">
-            <input type="radio" name="workflow-mode" value="reactive">
-            <strong>Reactive:</strong> Why didn't this appear?
-          </label>
-        </div>
-      </header>
+    <header>
+      <h1>Content Placement Advisor</h1>
+      <p>Choose a content type and taxonomy terms to preview where the content will surface across Yale SOM pages.</p>
+      <div class="workflow-toggle"
+        style="margin-top: 1rem; padding: 1rem; background: #f0f4f8; border-radius: 4px; border: 1px solid #dcdcdc;">
+        <strong style="display:block; margin-bottom: 0.5rem; color: #333;">Why are you using this tool?</strong>
+        <label style="margin-right: 1.5rem; cursor: pointer;">
+          <input type="radio" name="workflow-mode" value="proactive" checked>
+          <strong>Proactive:</strong> Where will this go?
+        </label>
+        <label style="cursor: pointer;">
+          <input type="radio" name="workflow-mode" value="reactive">
+          <strong>Reactive:</strong> Why didn't this appear?
+        </label>
+      </div>
+    </header>
 
-      <form id="advisor-form" class="advisor-form">
-        <div class="form-row">
-          <label for="content-type">Content type</label>
-          <select id="content-type" required></select>
-        </div>
+    <form id="advisor-form" class="advisor-form">
+      <div class="form-row">
+        <label for="content-type">Content type</label>
+        <select id="content-type" required></select>
+      </div>
 
-        <fieldset class="taxonomy-fieldset">
-          <legend>Taxonomy filters</legend>
-          <div class="taxonomy-controls">
-            <label for="taxonomy-select">Choose a taxonomy dimension</label>
-            <select id="taxonomy-select"></select>
-            <button type="button" id="add-taxonomy">Add filter</button>
-          </div>
-          <p id="taxonomy-helper" class="taxonomy-helper" aria-live="polite"></p>
-          <div id="taxonomy-container" class="taxonomy-container"></div>
-        </fieldset>
-
-        <div class="form-actions" style="display: flex; gap: 1rem; align-items: center;">
-          <button type="submit" id="submit-button" class="primary" disabled>Evaluate placements</button>
-          <button type="button" id="reset-button" class="secondary" style="background: #e0e0e0; color: #333;">Clear
-            form</button>
+      <fieldset class="taxonomy-fieldset">
+        <legend>Taxonomy filters</legend>
+        <div class="taxonomy-controls">
+          <label for="taxonomy-select">Choose a taxonomy dimension</label>
+          <select id="taxonomy-select"></select>
+          <button type="button" id="add-taxonomy">Add filter</button>
         </div>
-      </form>
-    </div>
+        <p id="taxonomy-helper" class="taxonomy-helper" aria-live="polite"></p>
+        <div id="taxonomy-container" class="taxonomy-container"></div>
+      </fieldset>
 
-    <div class="right-panel">
-      <section id="results-section" class="results">
-        <div id="initial-empty-state"
-          style="text-align: center; padding: 4rem 2rem; color: #666; background: #f9f9f9; border-radius: 8px; border: 2px dashed #ddd;">
-          <h2 style="color: #444; margin-bottom: 0.5rem;">Ready to Evaluate</h2>
-          <p>Select a <strong>Content type</strong> and any relevant tags on the left, then click <strong>Evaluate
-              placements</strong> to see where the content will appear.</p>
-        </div>
-        <div id="results-summary"></div>
-        <div id="results-confirmed"></div>
-        <div id="results-limited"></div>
-        <div id="results-excluded"></div>
-      </section>
-    </div>
+      <div class="form-actions" style="display: flex; gap: 1rem; align-items: center;">
+        <button type="submit" id="submit-button" class="primary" disabled>Evaluate placements</button>
+        <button type="button" id="reset-button" class="secondary" style="background: #e0e0e0; color: #333;">Clear
+          form</button>
+      </div>
+    </form>
+
+    <section id="results-section" class="results">
+      <div id="initial-empty-state"
+        style="text-align: center; padding: 4rem 2rem; color: #666; background: #f9f9f9; border-radius: 8px; border: 2px dashed #ddd;">
+        <h2 style="color: #444; margin-bottom: 0.5rem;">Ready to Evaluate</h2>
+        <p>Select a <strong>Content type</strong> and any relevant tags above, then click <strong>Evaluate
+            placements</strong> to see where the content will appear.</p>
+      </div>
+      <div id="results-summary"></div>
+      <div id="results-confirmed"></div>
+      <div id="results-limited"></div>
+      <div id="results-excluded"></div>
+    </section>
   </main>
 
   <script type="module" src="./app.js"></script>

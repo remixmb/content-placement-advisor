@@ -11,31 +11,12 @@ body {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 2rem auto;
   padding: 2rem;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  display: grid;
-  grid-template-columns: 380px 1fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-@media (max-width: 960px) {
-  main {
-    grid-template-columns: 1fr;
-  }
-}
-
-.left-panel {
-  position: sticky;
-  top: 2rem;
-}
-
-.right-panel {
-  min-height: 50vh;
 }
 
 h1 {
