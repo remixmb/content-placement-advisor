@@ -281,10 +281,10 @@ function evaluateLocationContext(
     const slotTerms = terms.length
       ? terms
       : (argumentDetail.argumentList[argIndex] ?? '')
-          .split(/[,+]/)
-          .map((value) => value.trim())
-          .filter(Boolean)
-          .map((value) => ({ value, dimension }));
+        .split(/[,+]/)
+        .map((value) => value.trim())
+        .filter(Boolean)
+        .map((value) => ({ value, dimension }));
     if (!slotTerms.length) {
       continue;
     }
@@ -557,7 +557,14 @@ function buildGroupedSurfaceKey(
 
 function buildTemplateGroupReason(
   baseReason: string,
+  entry: PlacementMapEntry,
 ): string {
+  if (entry.viewId === 'profiles_grid') {
+    return `${baseReason} This content qualifies to appear at the bottom of other Profile pages that share the exact same Program, Center, and contextual tags.`;
+  }
+  if (entry.viewId === 'stories_teaser_cards') {
+    return `${baseReason} This content qualifies to appear at the bottom of other Story pages that share the exact same contextual tags.`;
+  }
   return baseReason;
 }
 
@@ -692,7 +699,7 @@ export function getContentPlacements(
             existing.sampleSet.add(location.page);
             existing.explanation.samplePages = Array.from(existing.sampleSet);
           }
-          existing.explanation.reason = buildTemplateGroupReason(reasonText);
+          existing.explanation.reason = buildTemplateGroupReason(reasonText, entry);
           continue;
         }
 
@@ -709,6 +716,7 @@ export function getContentPlacements(
         };
         groupedExplanation.reason = buildTemplateGroupReason(
           reasonText,
+          entry,
         );
         groupedTemplateMatches.set(groupKey, {
           score: evaluation.score + locationEvaluation.score,

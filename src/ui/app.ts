@@ -273,16 +273,14 @@ function createLink(pathOrUrl: string, label?: string): HTMLAnchorElement {
 
 function renderSummary(
   container: HTMLElement,
-  confirmedCount: number,
-  limitedCount: number,
+  eligibleCount: number,
   excludedCount: number,
 ) {
   container.innerHTML = '';
   const list = document.createElement('div');
   list.className = 'results-summary';
   const items: Array<{ label: string; value: number; tone: ResultSectionTone }> = [
-    { label: 'Will appear', value: confirmedCount, tone: 'confirmed' },
-    { label: 'May appear', value: limitedCount, tone: 'limited' },
+    { label: 'Eligible placements', value: eligibleCount, tone: 'confirmed' },
     { label: "Won't appear", value: excludedCount, tone: 'excluded' },
   ];
 
@@ -736,10 +734,29 @@ function addTaxonomyRow(
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'taxonomy-suggestion';
-      button.textContent = `${term.term} (${term.id}) — ${term.vocabulary}`;
+
+      const labelText = `${term.term} (${term.id}) — ${term.vocabulary}`;
+      if (query.length > 0) {
+        const lowerLabel = labelText.toLowerCase();
+        const lowerQuery = query.toLowerCase();
+        const matchIndex = lowerLabel.indexOf(lowerQuery);
+
+        if (matchIndex >= 0) {
+          const pre = labelText.substring(0, matchIndex);
+          const match = labelText.substring(matchIndex, matchIndex + query.length);
+          const post = labelText.substring(matchIndex + query.length);
+          button.innerHTML = `${pre}<b>${match}</b>${post}`;
+        } else {
+          button.textContent = labelText;
+        }
+      } else {
+        button.textContent = labelText;
+      }
+
       button.addEventListener('click', () => {
         addTerm(term.id);
         input.value = '';
+        suggestions.innerHTML = '';
       });
       suggestions.appendChild(button);
     });
@@ -820,6 +837,7 @@ function renderSection(
   items: PlacementExplanation[],
   emptyState: string,
   tone: ResultSectionTone,
+  isReactive = false,
 ) {
   container.innerHTML = '';
   container.className = `results-group results-group--${tone}`;
@@ -917,6 +935,9 @@ function renderSection(
     if (detailLines.length || item.viewId || item.displayId) {
       const details = document.createElement('details');
       details.className = 'placement-details';
+      if (isReactive && tone === 'excluded') {
+        details.open = true;
+      }
       const summary = document.createElement('summary');
       summary.textContent = 'Details';
       details.appendChild(summary);
@@ -963,6 +984,10 @@ async function init() {
   const resultsLimited = document.querySelector<HTMLElement>('#results-limited');
   const resultsExcluded = document.querySelector<HTMLElement>('#results-excluded');
 
+  const submitButton = document.querySelector<HTMLButtonElement>('#submit-button');
+  const resetButton = document.querySelector<HTMLButtonElement>('#reset-button');
+  const initialEmptyState = document.querySelector<HTMLElement>('#initial-empty-state');
+
   if (
     !form ||
     !contentTypeSelect ||
@@ -972,7 +997,10 @@ async function init() {
     !resultsSummary ||
     !resultsConfirmed ||
     !resultsLimited ||
-    !resultsExcluded
+    !resultsExcluded ||
+    !submitButton ||
+    !resetButton ||
+    !initialEmptyState
   ) {
     throw new Error('Placement Advisor UI elements are missing.');
   }
@@ -983,7 +1011,7 @@ async function init() {
 
   const clearTaxonomyRows = () => {
     activeDimensions.clear();
-    taxonomyContainer.innerHTML = '';
+    if (taxonomyContainer) taxonomyContainer.innerHTML = '';
   };
 
   const setTaxonomyHelper = (message: string) => {
@@ -993,14 +1021,18 @@ async function init() {
   };
 
   function updateTaxonomyControls() {
+    if (!contentTypeSelect || !taxonomySelect || !addTaxonomyButton || !submitButton || !taxonomyContainer) return;
+
     const selectedType = contentTypeSelect.value;
     if (!selectedType) {
       currentFieldMap = new Map();
       renderTaxonomyOptions(taxonomySelect, addTaxonomyButton, dimensionMeta, null);
       clearTaxonomyRows();
       setTaxonomyHelper('Select a content type to see available taxonomy filters.');
+      submitButton.disabled = true;
       return;
     }
+    submitButton.disabled = false;
     const canonicalType = canonicalizeKey(selectedType);
     const allowedFields = canonicalType ? taxonomyFieldsByType.get(canonicalType) : undefined;
     if (!allowedFields || allowedFields.length === 0) {
@@ -1026,6 +1058,7 @@ async function init() {
 
   addTaxonomyButton.addEventListener('click', (event) => {
     event.preventDefault();
+    if (!taxonomySelect) return;
     const value = taxonomySelect.value;
     if (!value) {
       return;
@@ -1037,40 +1070,67 @@ async function init() {
     const fieldOverride = currentFieldMap.get(value);
     const vocabularyId = fieldOverride?.vocabulary ?? dimensionVocabularyMap.get(value);
     const restrictVocabulary = Boolean(vocabularyId && termsByVocabulary.has(vocabularyId));
-    addTaxonomyRow(taxonomyContainer, value, meta, activeDimensions, taxonomyTermsList, termsByVocabulary, {
-      label: fieldOverride?.label ?? meta.label,
-      vocabularyId,
-      restrictVocabulary,
-      required: fieldOverride?.required,
-    });
+    if (taxonomyContainer) {
+      addTaxonomyRow(taxonomyContainer, value, meta, activeDimensions, taxonomyTermsList, termsByVocabulary, {
+        label: fieldOverride?.label ?? meta.label,
+        vocabularyId,
+        restrictVocabulary,
+        required: fieldOverride?.required,
+      });
+    }
+  });
+
+  resetButton.addEventListener('click', () => {
+    if (contentTypeSelect) contentTypeSelect.value = '';
+    updateTaxonomyControls();
+    if (resultsSummary) resultsSummary.innerHTML = '';
+    if (resultsConfirmed) resultsConfirmed.innerHTML = '';
+    if (resultsLimited) resultsLimited.style.display = 'block';
+    if (resultsExcluded) resultsExcluded.innerHTML = '';
+    if (initialEmptyState) initialEmptyState.style.display = 'block';
   });
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const taxonomy = collectTaxonomyValues(taxonomyContainer);
+    if (initialEmptyState) initialEmptyState.style.display = 'none';
+    const isReactive = document.querySelector<HTMLInputElement>('input[name="workflow-mode"]:checked')?.value === 'reactive';
+    const taxonomy = taxonomyContainer ? collectTaxonomyValues(taxonomyContainer) : {};
     const payload: ContentInput = {
-      content_type: contentTypeSelect.value,
+      content_type: contentTypeSelect?.value ?? '',
       taxonomy,
     };
     const result = getContentPlacements(payload, entries, {
       formatTerm: (value) => formatTermValue(value, taxonomyMap),
     });
-    renderSummary(resultsSummary, result.willAppear.length, result.eligibleButLimited.length, result.excluded.length);
-    renderSection(resultsConfirmed, 'Will appear', result.willAppear, 'No confirmed placements yet.', 'confirmed');
-    renderSection(
-      resultsLimited,
-      'May appear',
-      result.eligibleButLimited,
-      'No limited placements detected.',
-      'limited',
-    );
-    renderSection(
-      resultsExcluded,
-      "Won't appear",
-      result.excluded,
-      'No exclusions based on the provided filters.',
-      'excluded',
-    );
+
+    const eligible = [...result.willAppear, ...result.eligibleButLimited];
+
+    if (resultsLimited) resultsLimited.style.display = 'none';
+
+    if (resultsConfirmed && resultsExcluded) {
+      if (isReactive) {
+        resultsConfirmed.style.opacity = '0.6';
+        resultsExcluded.style.opacity = '1';
+        resultsExcluded.style.order = '-1';
+      } else {
+        resultsConfirmed.style.opacity = '1';
+        resultsExcluded.style.opacity = '0.6';
+        resultsExcluded.style.order = '0';
+      }
+    }
+
+    if (resultsSummary) renderSummary(resultsSummary, eligible.length, result.excluded.length);
+    if (resultsConfirmed) renderSection(resultsConfirmed, 'Eligible placements', eligible, 'No eligible placements detected.', 'confirmed', isReactive);
+    if (resultsExcluded) {
+      renderSection(
+        resultsExcluded,
+        "Won't appear",
+        result.excluded,
+        'No exclusions based on the provided filters.',
+        'excluded',
+        isReactive
+      );
+    }
   });
 }
 
